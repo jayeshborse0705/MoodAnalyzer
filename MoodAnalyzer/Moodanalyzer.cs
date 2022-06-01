@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MoodAnalyzer;
 
 namespace MoodAnalyser
 {
@@ -33,7 +34,8 @@ namespace MoodAnalyser
             }
             catch (NullReferenceException)
             {
-                return "HAPPY";
+                throw new MoodanalyzerCustomException(MoodanalyzerCustomException.Exceptiontype.Empty_Null, "Mood should not be null");
+               // return "HAPPY";
             }
         }
     }
