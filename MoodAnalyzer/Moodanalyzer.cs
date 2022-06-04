@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MoodAnalyzer;
 
-namespace MoodAnalyser
+namespace MoodAnalyzer
 {
     public class Moodanalyser
     {
@@ -16,6 +16,11 @@ namespace MoodAnalyser
         public Moodanalyser(string message)
         {
             this.message = message;
+        }
+
+        public Moodanalyser()
+        {
+            this.message="I am in any mood";
         }
         public string AnalyseMood()
         {

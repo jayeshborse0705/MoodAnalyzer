@@ -1,4 +1,6 @@
-﻿namespace MoodAnalyser
+﻿using MoodAnalyzer;
+
+namespace MoodAnalyser
 {
     public class Program
     {
